@@ -27,7 +27,8 @@ server.addService(urlsProto.UrlsService.service, {
       for (let url of data.urls) {
         const content = await axios.get(url)
         const res = { result: content.data }
-        await call.write(res)
+
+        call.write(res)
       }
 
 
