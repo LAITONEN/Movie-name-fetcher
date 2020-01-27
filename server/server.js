@@ -30,8 +30,7 @@ server.addService(urlsProto.UrlsService.service, {
 
         call.write(res)
       }
-
-
+      call.end()
     });
 
     call.on('end', function () {
