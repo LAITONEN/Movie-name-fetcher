@@ -1,0 +1,16 @@
+version: "3"
+services:
+  speechly-server:
+    container_name: speechly-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "50051:8080"
+  speechly-client:
+    container_name: speechly-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "50052:8081"
