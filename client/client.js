@@ -1,7 +1,7 @@
 const grpc = require('grpc');
 const protoLoader = require('@grpc/proto-loader');
 
-const PROTO_PATH = __dirname + '/../server/urls.proto';
+const PROTO_PATH = __dirname + '/urls.proto';
 const options = {
   keepCase: true,
   longs: String,

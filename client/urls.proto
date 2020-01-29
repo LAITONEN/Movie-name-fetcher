@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package urls;
+
+service UrlsService {
+    rpc Fetch (stream Urls) returns (stream Response) {}
+}
+
+message Urls {
+  repeated string urls = 1;
+}
+
+message Response {
+  Result result = 1;
+}
+
+message Result {
+  string Title = 1;
+}
