@@ -8,7 +8,7 @@ const API_KEY = new URLSearchParams({ apikey: 63207890 }).toString()
 
 readline.emitKeypressEvents(process.stdin);
 
-let input
+let input = ''
 
 const rl = readline.createInterface({
   input: process.stdin,
