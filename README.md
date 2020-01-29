@@ -1,4 +1,4 @@
-This application fetch the name of the most relevant movie based on the provided search strings
+This application fetches the name of the most relevant movie based on the provided search strings.
 
 **To run:**
 1. Open 2 Terminal windows.
