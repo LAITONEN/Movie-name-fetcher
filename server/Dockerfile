@@ -1,6 +1,6 @@
 FROM node:9.3.0   
 
-WORKDIR /speechly-rastoropov
+WORKDIR /speechly-server
 COPY package*.json ./
 RUN npm install
 COPY . .
