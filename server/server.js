@@ -39,7 +39,10 @@ server.addService(urlsProto.UrlsService.service, {
   }
 })
 
-server.bind('127.0.0.1:50051',
+const address = '127.0.0.1'
+const port = '50051'
+
+server.bind(`${address}:${port}`,
   grpc.ServerCredentials.createInsecure())
-console.log('Server running at http://127.0.0.1:50051')
+console.log(`Server running at http://${address}:${port}`)
 server.start()
